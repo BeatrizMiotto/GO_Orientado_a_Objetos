@@ -14,4 +14,5 @@ func main() {
 	conta2 := ContaCorrente{"Bia", 5023, 789456, 123.45}
 	conta3 := ContaCorrente{titular: "Miotto", saldo: 123.45}
 	fmt.Println(conta, conta2, conta3)
+
 }
