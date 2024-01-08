@@ -1,20 +1,18 @@
 package main
 
 import (
-	"github.com//BeatrizMiotto/GO_Orientado_a_Objetos/banco/contas"
-
 	"fmt"
+
+	"\banco\clientes\"
 )
 
 func main() {
 
-	contaNova := contas.ContaCorrente{Titular: "Ana", Saldo: 1000}
-	contaNova1 := contas.ContaCorrente{Titular: "Maria", Saldo: 300}
+	clientenovo := clientes.Titular{"Mariana", "123.789.456-10", "Desenvolvedora"}
+	contaNova := contas.ContaCorrente{clientenovo, 123, 123456, 300}
 
-	status := contaNova.Transferir(100, &contaNova1)
+	//status := contaNova.Transferir(100, &contaNova1)
 
-	fmt.Println(status)
 	fmt.Println(contaNova)
-	fmt.Println(contaNova1)
 
 }
